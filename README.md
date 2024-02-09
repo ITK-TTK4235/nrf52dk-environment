@@ -5,8 +5,7 @@ Development environment for nRF52DK. This project can be used as a basic Makefil
 Dependencies can be install with your preferred package manager (apt, homebrew, yay, pacman etc.) or via the provided links. 
 
 - arm-none-eabi-gcc >=10.3.1
-- arm-none-eabi-gdb (linux)
-- lldb (macos)
+- arm-none-eabi-gdb
 -  [nRF Command Line Tools (for nrfjprog)](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download) 
 - [Alternative installation for nRF Command Line Tools (AUR)](https://aur.archlinux.org/packages/nrf-command-line-tools)
 
@@ -17,6 +16,20 @@ Check for existing install:
 arm-none-eabi-gcc --version
 ```
 If not found download and install the ARM Gnu toolchain from [this link](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
+
+## MacOS installation
+
+This installation process requires Homebrew package manager (https://brew.sh/).
+
+1. Install ARM Toolchain
+```bash
+brew install arm-none-eabi-gcc
+```
+```bash
+brew install arm-none-eabi-gdb
+```
+2. Download and install [nRF Command Line Tools](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download)
+3. Clone repository and open repository with VSCode
 
 ## VSCode debugging
 To utilize the debugging features in VSCode you need to install the [*marus-cortex-debug*](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug) extension.
