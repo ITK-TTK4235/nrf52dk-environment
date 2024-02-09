@@ -14,7 +14,8 @@
             "runToEntryPoint": "main",
             "interface": "swd",
             "osx": {
-            "armToolchainPath": "/opt/homebrew/bin/"
+                "armToolchainPath": "/opt/homebrew/bin/",
+                "gdbPath": "/opt/homebrew/bin/arm-none-eabi-gdb" // Can be replaced with lldb
             },
               "linux": {
                 "armToolchainPath": "/usr/bin/"
