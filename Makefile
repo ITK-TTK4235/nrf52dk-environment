@@ -31,7 +31,7 @@ CFLAGS += --specs=nosys.specs -Wl,--gc-sections -T $(LINKER_SCRIPT)
 SOURCES += $(BUILD_SYS)/system_nrf52.c
 SOURCES += $(BUILD_SYS)/gcc_startup_nrf52.S
 
-.PHONY: default flash debug erase clean
+.PHONY: default flash debug erase recover clean
 
 default: $(BUILD_DIR)
 	@echo Compiling project
@@ -53,6 +53,9 @@ erase: $(BUILD_DIR)
 
 clean: $(BUILD_DIR)
 	$(QUIET) rm $(BUILD_DIR)/main.{elf,hex}
+
+recover: $(BUILD_DIR)
+	nrfjprog --recover
 
 $(BUILD_DIR):
 	$(QUIET)mkdir -p $(BUILD_DIR)
