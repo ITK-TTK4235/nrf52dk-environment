@@ -33,15 +33,15 @@ main() {
     wget https://developer.arm.com/-/media/Files/downloads/gnu/13.2.rel1/binrel/arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
     echo "--- Unpacking Arm GNU Toolchain ---"
     tar xvf arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz
-    mv arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi arm-none-eabi-13.2
-    mv arm-none-eabi-13.2 $ARM_INSTALL_DIR
+    sudo mv arm-gnu-toolchain-13.2.Rel1-x86_64-arm-none-eabi arm-none-eabi-13.2
+    sudo mv arm-none-eabi-13.2 $ARM_INSTALL_DIR
     echo "--- Installing requirements ---"
     sudo add-apt-repository -y ppa:deadsnakes/ppa
     sudo apt-get update
     sudo apt install -y libncursesw5
     sudo apt install -y python3.8
     echo "--- Cleaning up ---"
-    rm arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz     
+    sudo rm arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz     
     #echo "--- Cloning Handout Code ---"
     #git clone https://github.com/ITK-TTK4235/nrf52dk_devenvironment.git
     echo "--- Installation Complete ---"
