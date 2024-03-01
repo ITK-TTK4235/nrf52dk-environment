@@ -15,7 +15,7 @@ Check for existing install:
 ```bash
 arm-none-eabi-gcc --version
 ```
-If not found download and install the ARM Gnu toolchain from [this link](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
+If not found download and install the ARM GNU toolchain from [this link](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
 
 ## MacOS installation
 
