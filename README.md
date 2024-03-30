@@ -1,5 +1,5 @@
 # nRF52DK Development Environment
-Development environment for nRF52DK. This project can be used as a basic Makefile-based project or via VSCode with the *cortex-debug* extension on Linux or MacOS. For a more detailed description of the development environment, see [lab 3: Mikrokontroller](https://github.com/itK-TTK4235/lab_3).
+Development environment for nRF52DK. This project can be used as a basic Makefile-based project or via VSCode with the *cortex-debug* extension on Linux or MacOS.
 
 ## Dependencies
 Dependencies can be install with your preferred package manager (apt, homebrew, yay, pacman etc.) or via the provided links. 
