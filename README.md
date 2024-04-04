@@ -6,6 +6,7 @@ Dependencies can be install with your preferred package manager (apt, homebrew, 
 
 - arm-none-eabi-gcc >=10.3.1
 - arm-none-eabi-gdb
+- J-Link Software Tools (https://www.segger.com/downloads/jlink)
 -  [nRF Command Line Tools (for nrfjprog)](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download) 
 - [Alternative installation for nRF Command Line Tools (AUR)](https://aur.archlinux.org/packages/nrf-command-line-tools)
 
@@ -29,7 +30,8 @@ brew install arm-none-eabi-gcc
 brew install arm-none-eabi-gdb
 ```
 2. Download and install [nRF Command Line Tools](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download)
-3. Clone repository and open repository with VSCode
+3. Install J-Link Software Tools (https://www.segger.com/downloads/jlink)
+4. Clone repository and open repository with VSCode
 
 ## VSCode debugging
 To utilize the debugging features in VSCode you need to install the [*marus-cortex-debug*](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug) extension.
