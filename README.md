@@ -9,14 +9,16 @@ Dependencies can be install with your preferred package manager (apt, homebrew, 
 - J-Link Software Tools (https://www.segger.com/downloads/jlink)
 -  [nRF Command Line Tools (for nrfjprog)](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download) 
 - [Alternative installation for nRF Command Line Tools (AUR)](https://aur.archlinux.org/packages/nrf-command-line-tools)
+- Python 3.8 for Cortex-Debug
 
 ## Ubuntu installation (not needed for lab PCs)
+
 
 Check for existing install:
 ```bash
 arm-none-eabi-gcc --version
 ```
-If not found download and install the ARM GNU toolchain from [this link](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain)
+If not found download and install the ARM GNU toolchain from [this link](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain) including libcurses5 (Check ![this link](https://askubuntu.com/questions/1243252/how-to-install-arm-none-eabi-gdb-on-ubuntu-20-04-lts-focal-fossa) for solving a common issue with the dependency libcurses5.). Install [nRF Command Line Tools (for nrfjprog)](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download) and Python 3.8. 
 
 ## MacOS installation
 
