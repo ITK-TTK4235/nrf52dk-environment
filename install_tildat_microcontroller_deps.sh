@@ -38,8 +38,9 @@ main() {
     echo "--- Installing requirements ---"
     sudo add-apt-repository -y ppa:deadsnakes/ppa
     sudo apt-get update
-    sudo apt install -y libncursesw5
+    sudo apt install -y libncurses5 #changed from libncursesw5
     sudo apt install -y python3.8
+    sudo apt install -y libpython3.8-dev
     echo "--- Cleaning up ---"
     sudo rm arm-gnu-toolchain-13.2.rel1-x86_64-arm-none-eabi.tar.xz     
     #echo "--- Cloning Handout Code ---"
