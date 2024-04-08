@@ -13,6 +13,7 @@ Dependencies can be install with your preferred package manager (apt, homebrew, 
 
 ## Ubuntu installation (not needed for lab PCs)
 
+> This installation guide is not complete, and may vary depending on your specific release and/or architecture. See the installation script `install_tildat_microcontroller_deps.sh` for some hints.
 
 Check for existing install:
 ```bash
