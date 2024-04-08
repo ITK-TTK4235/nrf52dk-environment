@@ -38,7 +38,7 @@ main() {
     echo "--- Installing requirements ---"
     sudo add-apt-repository -y ppa:deadsnakes/ppa
     sudo apt-get update
-    sudo apt install -y libncurses5 #changed from libncursesw5
+    sudo apt install -y libncurses5
     sudo apt install -y python3.8
     sudo apt install -y libpython3.8-dev
     echo "--- Cleaning up ---"
