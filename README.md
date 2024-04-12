@@ -22,7 +22,8 @@ arm-none-eabi-gcc --version
 If not found download and install the ARM GNU toolchain from [this link](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain) including libcurses5 (Check ![this link](https://askubuntu.com/questions/1243252/how-to-install-arm-none-eabi-gdb-on-ubuntu-20-04-lts-focal-fossa) for solving a common issue with the dependency libcurses5.). Install [nRF Command Line Tools (for nrfjprog)](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download) and Python 3.8. 
 
 ## MacOS installation
-
+> This installation guide is not complete, and may vary depending on your specific release and/or architecture. See the installation script `install_tildat_microcontroller_deps.sh` for some hints.
+> 
 This installation process requires Homebrew package manager (https://brew.sh/).
 
 1. Install ARM Toolchain
@@ -34,7 +35,9 @@ brew install arm-none-eabi-gdb
 ```
 2. Download and install [nRF Command Line Tools](https://www.nordicsemi.com/Products/Development-tools/nrf-command-line-tools/download)
 3. Install J-Link Software Tools (https://www.segger.com/downloads/jlink)
-4. Clone repository and open repository with VSCode
+4. Install dependencies for Marus cortex debug (See install script for hints)
+5. Clone repository and open repository with VSCode
+6. Adjust Makefile to suit Homebrew installation paths
 
 ## VSCode debugging
 To utilize the debugging features in VSCode you need to install the [*marus-cortex-debug*](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug) extension.
