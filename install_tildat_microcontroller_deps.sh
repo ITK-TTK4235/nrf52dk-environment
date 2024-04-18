@@ -39,6 +39,7 @@ main() {
     sudo add-apt-repository -y ppa:deadsnakes/ppa
     sudo apt-get update
     sudo apt install -y libncurses5
+    sudo apt install -y libncursesw5 # Needed for lab PC
     sudo apt install -y python3.8
     sudo apt install -y libpython3.8-dev
     echo "--- Cleaning up ---"
